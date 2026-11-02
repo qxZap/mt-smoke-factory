@@ -4,7 +4,7 @@ Plugin to cause more tire smoke.
 
 Burnouts and drifts leave a real cloud: tire smoke lasts longer, spreads wider and rises.
 
-Settings: `Binaries\Win64\smoke_factory.ini`, section `[Smoke]`. Purely visual and local.
+Settings: `Binaries\Win64\plugins\smoke_factory.ini`, section `[Smoke]`. Purely visual and local.
 
 ## Install
 

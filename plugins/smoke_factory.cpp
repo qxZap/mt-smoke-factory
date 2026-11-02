@@ -153,6 +153,7 @@ extern "C" __declspec(dllexport) int PluginInit(const MtApi* a) {
     if (!a || a->version < 1 || a->size < offsetof(MtApi, plugin) + sizeof(void*)) return 1;
     api = a;
     MoveFileW((gameDir() + L"smoke.ini").c_str(), (gameDir() + L"smoke_factory.ini").c_str());  // settings from before the rename
+    if (iniDisabled(L"smoke_factory.ini")) return 0;
     CloseHandle(CreateThread(nullptr, 0, run, nullptr, 0, nullptr));
     return 0;
 }
