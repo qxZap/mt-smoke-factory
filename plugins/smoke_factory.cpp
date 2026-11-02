@@ -144,7 +144,7 @@ static DWORD WINAPI run(LPVOID) {
                 MT_LOG("start velocity: Z now %.1f..%.1f (+%g up)", z1, z0, rise);
             }
         }
-        Sleep(3000);
+        Sleep(done.empty() ? 3000 : 15000);
     }
 }
 
